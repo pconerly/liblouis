@@ -21,7 +21,7 @@ emmake make &&
 
 echo "[liblouis-js] building UTF-32 with no tables..." &&
 buildjs "32" "build-no-tables-utf32.js" &&
-#buildjs "32" "build-no-tables-wasm-utf32.js" "-s WASM=1" &&
-#buildjs "32" "build-tables-embeded-root-utf32.js" "--embed-files ./out-emscripten-install/share/liblouis/tables@/" &&
+buildjs "32" "build-no-tables-wasm-utf32.js" "-s WASM=1" &&
+buildjs "32" "build-tables-embeded-root-utf32.js" "--embed-files ./out-emscripten-install/share/liblouis/tables@/" &&
 
 echo "[liblouis-js] done building in docker image..."
